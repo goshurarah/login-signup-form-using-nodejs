@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <%- include('component/styles.ejs')%>
+
+</head>
+
+<body>
+    <%- include('component/navbar.ejs')%>
+
+        <div class="form-box">
+            <div class="button-box">
+                <!-- insert data of button -->
+                <a href="/login"><button type="button" class="toggle-btn">For Login Form</button></a>
+            </div>
+            <h2 class=heading>Welcome!</h2>
+
+            <!-- here inserted the sign up form data -->
+            <form action="/sign_up" method="POST" class="input-form">
+                <input type="text" class="input-field" placeholder="First Name" name="first_name">
+                <input type="text" class="input-field" placeholder="Last Name" name="last_name">
+                <input type="email" class="input-field" placeholder="E-Mail" name="email">
+                <input type="password" class="input-field" placeholder="Password" name="password">
+                <input type="password" class="input-field" placeholder="Confirm Password" name="confirm_password">
+                <input type="submit" class="submit-btn" value="Sign Up">
+            </form>
+
+        </div>
+        <%- include('component/footer.ejs')%>
+
+</body>
+
+</html>

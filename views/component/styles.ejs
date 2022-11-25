@@ -1,0 +1,246 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,800&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Piazzolla', serif;
+        color: seashell;
+    }
+
+    :root {
+        --main-bg: #1e272e;
+        --main-color: #0097e6;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        animation: body 3s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        min-height: 100vh;
+
+    }
+
+    /* snowflake rotation */
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .fa-snowflake {
+        transition: all;
+        animation: rotation 2s linear infinite;
+        color: var(--main-color);
+    }
+
+
+    /* navbar styles */
+    .main_menu {
+        background-color: var(--main-bg);
+        box-shadow: 0px 10px 8px #878686;
+    }
+
+    .navbar {
+        color: #fff;
+        background-color: var(--main-bg);
+
+    }
+
+    .navbar li {
+        margin-left: 2rem;
+    }
+
+    .navbar a {
+        color: #fff;
+    }
+
+    .navbar a:hover {
+        color: var(--main-color);
+    }
+
+
+    /* body color */
+    @-webkit-keyframes body {
+        0% {
+            background-color: purple
+        }
+
+        50% {
+            background-color: #ef9633
+        }
+
+        100% {
+            background-color: green
+        }
+    }
+
+    @keyframes body {
+        0% {
+            background-color: violet;
+        }
+
+        50% {
+            background-color: #ef9633;
+        }
+
+        100% {
+            background-color: springgreen;
+        }
+    }
+
+
+    /* button animation */
+    @keyframes button_animation {
+        25% {
+            background-color: darkolivegreen;
+        }
+
+        50% {
+            background-color: khaki;
+        }
+
+        75% {
+            background-color: indigo;
+        }
+
+        100% {
+            background-color: grey;
+        }
+
+    }
+
+    .button-box {
+        width: 245px;
+        margin: 26px auto;
+        margin-top: 3rem;
+        position: relative;
+        box-shadow: 0 0 10px 10px khaki;
+        border-radius: 40px;
+        text-align: center;
+        animation-name: button_animation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    /* form box radius animation */
+    @keyframes change_border_radius {
+        0% {
+            border-radius: 15px;
+        }
+
+        25% {
+            border-radius: 25px;
+        }
+
+        50% {
+            border-radius: 35px;
+        }
+
+        75% {
+            border-radius: 25px;
+        }
+
+        100% {
+            border-radius: 15px;
+        }
+
+    }
+
+    .form-box {
+        background: rgba(0, 0, 0, 0.7);
+        width: 380px;
+        height: 530px;
+        position: relative;
+        margin: 2% auto;
+        padding: 5px;
+        overflow: hidden;
+        animation-name: change_border_radius;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .toggle-btn {
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+
+    }
+
+    .heading {
+        text-align: center;
+        font-family: cursive;
+        color: darkgoldenrod;
+        margin-top: 1rem;
+    }
+
+    .input-form {
+        top: 160px;
+        position: absolute;
+        width: 180px;
+        color: seashell;
+
+    }
+
+    .input-field {
+        color: seashell;
+        width: 300px;
+        padding: 10px 5px;
+        margin: 5px 35px;
+        border-bottom: 1px solid khaki;
+        border-right: 1px solid khaki;
+        border-left: 1px solid khaki;
+        border-top: 1px solid khaki;
+        border-radius: 10px;
+        background: transparent;
+        color: seashell;
+    }
+
+    .submit-btn {
+        height: 35px;
+        width: 300px;
+        margin: 30px 40px;
+        font-weight: bold;
+        border-radius: 40px;
+        cursor: pointer;
+        display: block;
+        border: 0;
+        outline: none;
+        background: indianred;
+    }
+
+    .submit-btn:hover {
+        background-color: var(--main-color);
+    }
+
+    /* footer styles */
+    footer {
+        background-color: var(--main-bg);
+        width: 100%;
+        margin-top: auto;
+    }
+
+    footer p {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-color:hover {
+        color: var(--main-color);
+
+    }
+
+</style>
