@@ -17,6 +17,7 @@ nodejs,
 mongodb compass
 
 # Start the project by this command in the terminal:
+npm install,
 npm start
 
 # Env file 
