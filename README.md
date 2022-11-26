@@ -2,7 +2,7 @@
 Login and signup form using nodejs, expressjs, mongodb with complete validation, authentication, cookies, jwt created and deleted.
 
 
-# Helping Video
+# Project Video
 
 
 https://user-images.githubusercontent.com/114060450/204013062-57d56e90-1934-49e8-abe6-ba05858c741f.mp4
